@@ -1,8 +1,40 @@
 <!--
   HTML - Hypertext Markup Language
+
+  Markup
+  *Anatomia das Tags
+  - Abertura e Fechamento de Tags, junto com o Conteúdo constitue um Elemento HTML
+
+  <h1>Titulo</h1> isso é um elemento html
+
+  *Elementos vazios, não possue contedúdo só recebe atributos
+  <img>, <hr>, <input>, <br>, 
+
+  * Atributos html
+  - Informações extras, configurações
+  
+  * Atributos Globais mais utilixados
+  - class
+    serve para calssificar elementos, o CSS utiliza para adicionar estilos aos elementos classificados e acessar no Javascript.
+  - contenteditable
+    recebe true ou false/Serve para editar o conteudo quando True.
+  - data-*
+    Muito utilizado pelo CSS e JS, pode se add qualqer coisa apos o traco.
+  - hidden
+    Serve para esconder o conteudo de uma tag.
+  - id
+    utilizado pelo CSS e JS o id é único, seu não não deve se repetir
+  - style
+    Adiciona estilo dentro do html
+  - tabindex
+    Serve pra navegar na tela utilizando o tab do teclado/Acessibilidade
+  - title
+    Serve para definir um titulo
+  
+
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +42,28 @@
     <title>Document</title>
 </head>
 <body>
+
     <h1>Meu Titulo</h1>
+
+  <div class="car" contenteditable="true" id="car1">
+    Este conteudo tem uma classe e um id e pode ser editado.
+  </div>
+
+  <div class="car"  id="car2" style="color: rgb(61, 61, 197);">
+    Este conteudo tem uma classe e um id e não pode ser editado.
+  </div>
+
+  <div class="car"  id="car3">
+    Este conteudo tem uma classe e um id e nao pode ser editado.
+  </div>
+  <!--
+    * Aninhamento de Tags
+     - Fluxo
+     - Hierarquia
+     - posicionamento do Elemento
+  -->
+
+
+
 </body>
 </html>
