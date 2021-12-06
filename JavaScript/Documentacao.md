@@ -124,5 +124,76 @@ console.log(10-5+(-3)*4.6);
 
 ## Objeto em JavaScript
 
+/* Object
+    - Objeto
+    - Propriedades / Atributos
+    Ex: Celular (tamanho, peso, cor, altura, ...)
+    - Funcionalidades / Métodos
+    Ex: Celular (ligar, desligar, ...)
+
+    um objeto é representado por:
+    { propriedades: "valor"}
+*/
+
+## Arrays
+
+/* Array (Vetores)
+    - Tipo de dado extrutural
+    - uma lista.
+    - Um agrupamento de dados
+
+    ["Denilson", 31]
+*/
+
+## Variaveis
+
+* Nome simbolico para receber algum valor
+* Atalhos de Codigo
+* Identificadores
+* 3 palavras reservadas para se criar uma variavel
+    - var
+    - let
+    - const
+
+## var
+```js
+//var é global e pode funcionar fora de um escopo de bloco
+console.log('> Existe x antes do bloco? ', x)
+
+{
+    var x = 0
+}
+
+console.log('> Existe x depois do bloco? ', x)
+```
+## let e const
+```js
+//const e let sao locais e só funcionam no scopo onde foi criada
+console.log('> Existe y antes do bloco? ', y)
+
+{
+    var y = 0
+}
+
+console.log('> Existe y depois do bloco? ', y)
+```
+
+* O JavaScript é uma linguagem fracamente tipada e dinâmica
+    - Variaveis não precisam ter um tipo previamente definidos
+    - Podemos mudar o conteúdo da variavel.
+
+## Scope
+
+* Escopo determina a visibilidade de alguma variavel no JavaScript
+
+## Block statement
+```js
+{//Vamos iniciar um bloco aqui
+
+    //Aqui dentro é um bloco e pode se colocar qualquer codigo
+
+}//Aqui é o fechamento do bloco
+```
+* O bloco também criará um novo escopo. Chamamos de `block-scoped`
 
 
