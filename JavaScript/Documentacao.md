@@ -196,4 +196,16 @@ console.log('> Existe y depois do bloco? ', y)
 ```
 * O bloco também criará um novo escopo. Chamamos de `block-scoped`
 
+## Criando nomes para variaveis
+
+* JavaScript é case-sensitive(maiusculas e minusculas importam)
+* JavaScript aceita cadeia de caracteres Unicode(Pode colocar aspas, acentuações)
+
+- Ideal
+    * Criar nomes que fazem sentido 
+    * Que explique o que a variavel é ou faz
+    * camelCase
+    * snake_casa
+    * Escrever em inglês
+
 
