@@ -1,17 +1,14 @@
-//funções dentro de variaveis
-//Funções anonimas ou expression | Não possue nome
-//Parametros da função | Dentro dos parentese
-const somar = function(number1, number2) {
-    let total = number1 + number2
-    return total
+//Analogia - Função é um liquidificador
+
+//A boca do liquidificador recebe as frutas()
+function fazerSuco(fruta1, fruta2) {
+    return 'Suco de: ' + fruta1 + fruta2
 }
 
-let number1 = 34
-let number2 = 25
-
-console.log(`O número 1 é ${number1}`)
-console.log(`O número 2 é ${number2}`)
-console.log(`A soma é ${somar(number1, number2)}`)
+//O copo recebe o suco
+const copo = fazerSuco('banana', 'maçâ')
 
 
+//Mostra o que tem no copo
+console.log(copo)
 
