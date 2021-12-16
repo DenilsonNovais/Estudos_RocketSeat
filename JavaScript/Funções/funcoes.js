@@ -1,14 +1,29 @@
-//Analogia - Função é um liquidificador
+//Funções construtoras
+/*
+    function() constructor
 
-//A boca do liquidificador recebe as frutas()
-function fazerSuco(fruta1, fruta2) {
-    return 'Suco de: ' + fruta1 + fruta2
+    * Expressão new
+    * Criar novo objeto
+    * This keyword
+*/
+
+
+//Função construtora
+function Person(name) {
+    this.name = name
+    this.andar = function() {
+        return this.name + " está andando"
+    }
 }
 
-//O copo recebe o suco
-const copo = fazerSuco('banana', 'maçâ')
+//Novo objeto criado a partir da função
+const nome = new Person("Denilson")
+const joao = new Person("João")
+console.log(nome.andar())
+console.log(joao.andar())
 
 
-//Mostra o que tem no copo
-console.log(copo)
+
+
+
 
