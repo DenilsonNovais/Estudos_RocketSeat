@@ -57,6 +57,23 @@ let idade = 16
 const podeDirigir = idade >= 18 ? "Pode dirigir" : "Não pode Dirigir"
 console.log(podeDirigir)
 
+/*Ordem de precedencias
+    Precedencias de operadores
+
+    * Parenteses........................ ()
+    * Negação e incremento.............. ! ++ --
+    * Multiplicação e divisão........... * /
+    * Adição e subtração................ + -
+    * Relaçional........................ < <= > >= >=
+    * igualdade......................... == != === !==
+    * AND............................... &&
+    * OR................................ ||
+    * Condicional....................... ? :
+    * Atribuição........................ = += -= *= /=
+*/
+
+
+
 
 
 
