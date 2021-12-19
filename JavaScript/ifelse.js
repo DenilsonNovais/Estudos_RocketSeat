@@ -10,7 +10,7 @@ if(temperatura >= 37.5) {
     console.log('Saudavel')
 }
 */
-
+/*
 //Switch
 
 function calcular(number1, operador, number2) {
@@ -41,5 +41,26 @@ console.log(calcular(6, '*', 3))
 console.log(calcular(6, '+', 3))
 console.log(calcular(6, '-', 3))
 console.log(calcular(6, '/', 3))
+*/
 
+//Throw | Disparar, lancar
+
+function digaMeuNome(nome = '') {
+    if(nome === '') {
+        throw 'Nome é obrigatório'
+    }
+
+    console.log(nome)
+}
+
+
+//Try ... Catch | Tentar ... Capturar
+
+try{
+    digaMeuNome('Denilson')
+}catch(e) {
+    console.log(e)
+}
+
+console.log('Após o try/catch')
 
