@@ -1,49 +1,45 @@
-/* ### Sistema de gastos familiar
+/* ### Celsius em fahrenheit
 
-Crie um objeto que possuirá 2 propriedades, ambas do tipo
-array:
-    * receitas: []
-    * despesas: []
+    Crie uma função que receba uma string em celsius ou fahrenheit a faça 
+    a transformação de uma unidade para outra e vice versa
 
-Agora , crie uma função que irá calcular o total de receitas e despesas 
-e irá mostrar uma mensagem se a família está com saldo positivo ou 
-negativo, seguido do valor do saldo.
+    C = (F - 32) * 5/9
+
+    F = C * 9/5 + 32
 
 */
 
-let familia = {
-    receitas: [1550.00, 2350.00, 250.00],
-    despesas: [700.00, 550.00, 1300.00, 800.00, 200.00 ]
-}
+//transform('50F')
+function TransformarGraus(graus) {
+    const existeCelsius = graus.toUpperCase().includes('C')
+    const existeFahrenheit = graus.toUpperCase().includes('F')
 
-function somar(array) {
-    let total = 0;
-
-    for(let value of array) {
-        total += value
+    if (!existeCelsius && !existeFahrenheit) {
+        throw new Error('Grau não identificado')
     }
 
-    return total
-}
+    //Fluxo ideal F -> C
+    let atualizarGraus = Number(graus.toUpperCase().replace("F", ""));
+    let formula = fahrenheit => (fahrenheit - 32) * 5/9
+    let grausSign = 'C'
 
-function calcularBalanco() {
-    const calcularReceitas = somar(familia.receitas)
-    const calcularDespesas = somar(familia.despesas)
-
-    const total = calcularReceitas - calcularDespesas
-
-    const estaTudoBem = total >= 0
-
-    let resultadoBalanco = "negativo"
-
-    if (estaTudoBem) {
-        resultadoBalanco = "positivo"
+    //Fluxo auternativo C -> F
+    if (existeCelsius) {
+        atualizarGraus = Number(graus.toUpperCase().replace("C", ""));
+        formula = celsius => celsius * 9/5 + 32 
+        grausSign = 'F'
     }
 
-    console.log(`Seu saldo é ${resultadoBalanco}: R$${total.toFixed(2)}`)
+    return formula(atualizarGraus) + grausSign
 }
 
-calcularBalanco()
+try {
+    console.log(TransformarGraus('10C'))
+    console.log(TransformarGraus('50F')) 
+    TransformarGraus('50Z')
 
+}catch (error) {
+    console.log(error.message)
+}
 
 
