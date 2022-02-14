@@ -43,3 +43,4 @@ const animais = [
 
 //Acessando valores do Array
 console.log(animais[0]);
+console.log(animais[1]);
