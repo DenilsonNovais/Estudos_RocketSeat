@@ -65,6 +65,7 @@ const john = {
     name: 'John',
     age: 23,
     weight: 63.5,
+    altura: 1.71,
     isSubscribed: true
 }
 students[1] = john;
